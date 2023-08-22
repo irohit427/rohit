@@ -9,7 +9,7 @@ const Contact = () => {
           <h1>Get In Touch</h1>
         </div>
         <div className='py-16 text-justify leading-9 w-1/2 text-lg'>
-          <p>I’m not currently looking for new opportunities. My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+          <p>I’m currently looking for new opportunities. My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
         </div>
         <div>
           <Button />

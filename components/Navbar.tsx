@@ -25,7 +25,7 @@ const Navbar = ({ name, links}: {
               links.map((link) => (
                 <li key={link.index}>
                   <Link href={link.url} className='inline-block px-4 py-2 text-lg font-normal hover:cursor-pointer hover:font-bold
-                   text-gray-300 hover:text-white transition ease-in-out hover:scale-110 duration-300'>
+                   text-gray-300 hover:text-coral-red transition ease-in-out hover:scale-110 duration-300'>
                     {link.title}
                   </Link>
               </li>  

@@ -43,5 +43,5 @@ body {
 }
 
 .heading {
-  @apply text-4xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl font-bold
+  @apply text-4xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-coral-red
 }
