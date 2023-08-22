@@ -1,10 +1,10 @@
-import Image from 'next/image'
+import Hero from '@/section/Hero'
 
 export default function Home() {
   return (
     <main>
       <section>
-        Hero Card
+        <Hero />
       </section>
       <section>
         About

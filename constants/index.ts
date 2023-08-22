@@ -1,4 +1,6 @@
-import { NavLink } from "@/types";
+import { NavLink, ProfileLink } from "@/types";
+import { AiOutlineTwitter, AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai"
+import { GrInstagram } from "react-icons/gr";
 
 export const navLinks: NavLink[] = [
   {
@@ -26,4 +28,23 @@ export const navLinks: NavLink[] = [
     url: '/contact',
     index: 5,
   }
+]
+
+export const profileLinks: ProfileLink[] = [
+  {
+    link: '',
+    icon: AiOutlineTwitter
+  },
+  {
+    link: '',
+    icon: GrInstagram
+  },
+  {
+    link: '',
+    icon: AiOutlineGithub
+  },
+  {
+    link: '',
+    icon: AiOutlineLinkedin
+  },
 ]

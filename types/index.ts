@@ -3,3 +3,8 @@ export type NavLink = {
   url: string,
   index: number,
 }
+
+export type ProfileLink = {
+  link: string,
+  icon: any,
+}
