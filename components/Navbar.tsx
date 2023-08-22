@@ -12,7 +12,7 @@ const Navbar = ({ name, links}: {
 }) => {
     const [showNav, setShowNav] = useState<boolean>(false)
   return (
-    <div className='w-10/12 mx-auto py-4 flex items-center justify-between border-b-[2px] border-neutral-200 bg-cyan-500'>
+    <div className='w-10/12 mx-auto py-4 flex items-center justify-between border-b-[2px] border-neutral-200'>
       <div className='sm:text-3xl text-xl font-bold inline-block hover:cursor-pointer hover:scale-[120%] duration-300'>
         <a href="/" className='inline-block'>{name}</a>
       </div>

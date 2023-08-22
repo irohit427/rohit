@@ -1,5 +1,9 @@
 import About from '@/section/About'
+import Contact from '@/section/Contact'
+import Experience from '@/section/Experience'
 import Hero from '@/section/Hero'
+import Projects from '@/section/Projects'
+import Skills from '@/section/Skills'
 
 export default function Home() {
   return (
@@ -11,16 +15,16 @@ export default function Home() {
         <About />
       </section>
       <section>
-        Experience
+        <Experience />
       </section>
       <section>
-        Work
+        <Skills />
       </section>
       <section>
-        Tools
+        <Projects />
       </section>
       <section>
-        Contact
+        <Contact />
       </section>
       
     </main>
