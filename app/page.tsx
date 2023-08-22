@@ -11,19 +11,19 @@ export default function Home() {
       <section>
         <Hero />
       </section>
-      <section>
+      <section id='about'>
         <About />
       </section>
-      <section>
+      <section id='experience'>
         <Experience />
       </section>
-      <section>
+      <section id='skills'>
         <Skills />
       </section>
-      <section>
+      <section id='projects'>
         <Projects />
       </section>
-      <section>
+      <section id='contact'>
         <Contact />
       </section>
       

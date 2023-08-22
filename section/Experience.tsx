@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 const Experience = () => {
   const [selected, setSelected] = useState(0);
   return (
-    <div className='w-10/12 mx-auto relative -mt-12'>
+    <div className='w-10/12 mx-auto relative sm:-my-12 md:-my-12 lg:-my-12 xl:-my-12'>
       <div className='flex flex-col'>
         <div className='pb-12'>
           <h1 className='heading'>Experience</h1>
@@ -23,7 +23,6 @@ const Experience = () => {
                         <span>{experience.company}</span>
                       </li>
                     </div>
-
                   ))
                 }
               </div>
@@ -31,7 +30,7 @@ const Experience = () => {
           </div>
           {/* Right */}
           <div className='relative sm:w-full lg:w-[70%]'>
-            <div className='py-6'>
+            <div className='pt-6'>
               <h1 className='text-xl pb-5 font-bold'>
                 {experiences[selected].role} @ <span className='text-coral-red'>{experiences[selected].company}</span>
               </h1>

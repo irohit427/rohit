@@ -3,7 +3,7 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div className='w-10/12 mx-auto relative mt-12'>
+    <div className='w-10/12 mx-auto relative sm:-my-4 md:-my-4 lg:-my-4 xl:-my-4'>
       <div className='flex flex-col gap-20'>
         <div>
           <h1 className='heading'>Projects</h1>

@@ -16,3 +16,9 @@ export type Experience = {
   end: string,
   shortDesc: string[]
 }
+
+export type Skill = {
+  title: string,
+  techs: Array<{icon: string, name: string}>
+}
+
