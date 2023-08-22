@@ -1,3 +1,4 @@
+import About from '@/section/About'
 import Hero from '@/section/Hero'
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
         <Hero />
       </section>
       <section>
-        About
+        <About />
       </section>
       <section>
         Experience

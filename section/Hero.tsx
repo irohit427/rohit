@@ -12,7 +12,7 @@ const Hero = () => {
     <div className="lg:pt-16 pt-10 relative w-10/12 mx-auto ">
       <div className='md:flex items-center justify-between flex-row-reverse'>
         <div className='flex justify-end items-end relative'>
-          <Image className=' w-100% h-auto transform -scale-x-100 grayscale' width={480} height={0} src="/display.png" alt="" />
+          <Image className=' w-100% h-auto transform -scale-x-100 grayscale hover:grayscale-0' width={480} height={0} src="/display.png" alt="" />
         </div>
         <div className='p-4 pl-0 mt-5 sm:mt-20'>
           <p className='text-xl'>Hello</p>
