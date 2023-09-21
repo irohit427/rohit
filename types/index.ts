@@ -22,3 +22,11 @@ export type Skill = {
   techs: Array<{icon: string, name: string}>
 }
 
+export type Project = {
+  title: string,
+  description: string,
+  github: string,
+  domain?: string,
+  imgUrl: string,
+}
+

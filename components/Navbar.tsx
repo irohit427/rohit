@@ -3,6 +3,7 @@ import { NavLink } from '@/types'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import {RxHamburgerMenu} from "react-icons/rx"
+import { ThemeToggler } from './ThemeToggler'
 
 
 
@@ -19,7 +20,8 @@ const Navbar = ({ name, links}: {
       <div className='md:hidden hover:cursor-pointer' onClick={() => setShowNav(!showNav)}>
         <RxHamburgerMenu size={36}/>
       </div>
-      <nav className={`max-md:absolute max-md:w-full left-0 transition ease-in duration-300 ${showNav ? "top-[70px] visible": "max-md:invisible top-0"}`}>
+      <nav className={`flex items-center justify-center max-md:absolute max-md:w-full left-0 transition ease-in duration-300 ${showNav ? "top-[70px] visible": "max-md:invisible top-0"}`}>
+          <ThemeToggler />
           <ul className='flex items-center max-sm:text-sm justify-between max-sm:justify-around'>
             {
               links.map((link) => (

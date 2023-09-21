@@ -1,4 +1,4 @@
-import { Experience, NavLink, ProfileLink, Skill } from "@/types";
+import { Experience, NavLink, ProfileLink, Project, Skill } from "@/types";
 import { AiOutlineTwitter, AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai"
 import { GrInstagram } from "react-icons/gr";
 
@@ -216,4 +216,21 @@ export const skills: Skill[] = [
       }
     ]
   },
+];
+
+export const projects: Project[] = [
+  {
+    title: 'Elsa-AI',
+    description: 'A SaaS AI Platform bui;t using Next.js, Prisma, TailwindCSS and Stripe. This is a one stop solution for conversations, code generation, image generation, music generation and video generation',
+    imgUrl: 'https://res.cloudinary.com/dutt68gn6/image/upload/v1695273249/Screenshot_2023-09-21_at_10.41.52_AM_zvqnpl.png',
+    github: 'https://github.com/irohit427/elsa-ai',
+    domain: 'https://elsa-ai.vercel.app/'
+  },
+  {
+    title: 'Nest Billing Microservices',
+    description: `The NestJS-designed microservice ecosystem encompasses services such as billing, payment, notification, and authentication, all interconnected through MQTT for seamless communication. 
+      Notably, Stripe serves as the designated payment gateway within this architecture.`,
+    imgUrl: 'https://res.cloudinary.com/dutt68gn6/image/upload/v1695282062/1_WAkjm5ZEkRSo96a02PHuyQ_lfmyke.png',
+    github: 'https://github.com/irohit427/nest-billing-microservice'
+  }
 ];

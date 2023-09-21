@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { Space_Mono } from 'next/font/google'
 import Footer from '@/components/Footer';
 import { navLinks } from '@/constants';
+import { ThemeProvider } from '@/providers/themeProvider';
 
 const space_mono = Space_Mono({
   weight: ['400', '700'],
@@ -23,9 +24,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={space_mono.className}>
-        <Navbar name='Rohit' links={navLinks} />
-        <main className='relative'>{children}</main>
-        <Footer/>
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+        >
+          <Navbar name='Rohit' links={navLinks} />
+          <main className='relative'>{children}</main>
+          <Footer/>
+        </ThemeProvider>
       </body>
     </html>
   )
