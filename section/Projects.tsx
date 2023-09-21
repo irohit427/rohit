@@ -10,7 +10,7 @@ const Projects = () => {
         <div>
           <h1 className='heading'>Projects</h1>
         </div>
-        <div className='grid xl:grid-cols-3 gap-2'>
+        <div className='grid xl:grid-cols-3 gap-4 pt-4'>
           {
             projects.map((project: Project, index: number) => <ProjectCard project={project} key={index} />)
           }

@@ -5,6 +5,7 @@ import { Space_Mono } from 'next/font/google'
 import Footer from '@/components/Footer';
 import { navLinks } from '@/constants';
 import { ThemeProvider } from '@/providers/themeProvider';
+import { cn } from '@/lib/utils';
 
 const space_mono = Space_Mono({
   weight: ['400', '700'],
@@ -30,9 +31,11 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
         >
+          
           <Navbar name='Rohit' links={navLinks} />
-          <main className='relative'>{children}</main>
+          <main className='relative mx-auto'>{children}</main>
           <Footer/>
+          
         </ThemeProvider>
       </body>
     </html>

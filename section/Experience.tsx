@@ -11,15 +11,15 @@ const Experience = () => {
         <div className='pb-12'>
           <h1 className='heading'>Experience</h1>
         </div>
-        <div className='flex lg:flex-row gap-14 items-start sm:flex-col'>
+        <div className='flex sm:flex-col md:flex-row gap-14 items-start'>
           {/* Left */}
-          <div className='flex sm:flex-row lg:flex-col lg:w-[30%] relative sm:w-full'>
+          <div className='flex sm:flex-row lg:flex-col sm:w-[100%] lg:w-[30%] relative'>
             <ul className='sm:flex-row sm:flex sm:flex-wrap'>
               <div className='border-l-2 border-gray-600 py-4'>
                 {
                   experiences.map((experience: Experience, index) => (
-                    <div key={index} onClick={() => setSelected(index)} className={`${index === selected ? 'bg-gray-900 border-l-4 border-coral-red' : ''}`}>
-                      <li className='py-4 px-4 hover:cursor-pointer hover:bg-gray-900'>
+                    <div key={index} onClick={() => setSelected(index)} className={`${index === selected ? 'bg-coral-red dark:bg-zinc-700 border-l-4 border-coral-red' : ''}`}>
+                      <li className='py-4 px-4 hover:cursor-pointer hover:bg-coral-red'>
                         <span>{experience.company}</span>
                       </li>
                     </div>
