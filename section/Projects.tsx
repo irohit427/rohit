@@ -1,5 +1,6 @@
 import ProjectCard from '@/components/ProjectCard'
 import { projects } from '@/constants'
+import { Project } from '@/types'
 import React from 'react'
 
 const Projects = () => {
@@ -9,9 +10,9 @@ const Projects = () => {
         <div>
           <h1 className='heading'>Projects</h1>
         </div>
-        <div className='md:columns-2 sm:columns-1 lg:columns-2 xl:columns-3 gap-8'>
+        <div className='grid xl:grid-cols-3 gap-2'>
           {
-            projects.map((project) => <ProjectCard project={project} key={project.domain} />)
+            projects.map((project: Project, index: number) => <ProjectCard project={project} key={index} />)
           }
         </div>
       </div>

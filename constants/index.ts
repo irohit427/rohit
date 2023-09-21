@@ -221,10 +221,68 @@ export const skills: Skill[] = [
 export const projects: Project[] = [
   {
     title: 'Elsa-AI',
-    description: 'A SaaS AI Platform bui;t using Next.js, Prisma, TailwindCSS and Stripe. This is a one stop solution for conversations, code generation, image generation, music generation and video generation',
+    description: 'This SaaS AI Platform is crafted with Next.js, Prisma, MySQL, TailwindCSS, and Stripe, offering an all-in-one solution for various purposes, including facilitating conversations, generating code, producing images, creating music, and generating videos.',
     imgUrl: 'https://res.cloudinary.com/dutt68gn6/image/upload/v1695273249/Screenshot_2023-09-21_at_10.41.52_AM_zvqnpl.png',
     github: 'https://github.com/irohit427/elsa-ai',
     domain: 'https://elsa-ai.vercel.app/'
+  },
+  {
+    title: 'GalleryBox',
+    description: `This SaaS platform, developed using Next.js, Prisma, and MongoDB, empowers users to efficiently manage their work and present it to a global audience. The project comprises two key components: gallerybox-admin, which enables users to create tags, upload images, and perform edits; and gallerybox, where users' work is prominently showcased.`,
+    imgUrl: 'https://res.cloudinary.com/dutt68gn6/image/upload/v1695286811/Screenshot_2023-09-21_at_1.08.45_PM_iy7wf8.png',
+    github: [
+      {
+        title: 'Admin',
+        link: 'https://github.com/irohit427/sass-gallery-admin',
+        icon: 'https://img.icons8.com/bubbles/50/system-administrator-female.png'
+      }, 
+      {
+        title: 'GalleryBox',
+        link: 'https://github.com/irohit427/saas-gallery',
+        icon: 'https://img.icons8.com/fluency/48/gallery.png'
+      }
+    ],
+    domain: [
+      {
+        title: 'Admin',
+        link: 'https://sass-gallery-admin.vercel.app/',
+        icon: 'https://img.icons8.com/bubbles/50/system-administrator-female.png'
+      },
+      {
+        title: 'GalleryBox',
+        link: 'https://saas-gallery.vercel.app/',
+        icon: 'https://img.icons8.com/fluency/48/gallery.png'
+      },
+    ]
+  },
+  {
+    title: 'Crazy Monkey',
+    description: `Built with Next.js, Prisma, and Stripe, this SaaS platform empowers individual users to effortlessly establish and manage multiple online stores. Users can personalize their stores with sizes, colors, and product listings, efficiently manage orders, and gain valuable insights into their sales performance. When ready, they can seamlessly launch their stores, with Stripe handling the checkout process seamlessly.`,
+    imgUrl: 'https://res.cloudinary.com/dutt68gn6/image/upload/v1695291769/Twitter_Post_Photo_Collage_3_edbjfz.jpg',
+    github: [
+      {
+        title: 'Admin',
+        link: 'https://github.com/irohit427/ecommerce-admin',
+        icon: 'https://img.icons8.com/bubbles/50/system-administrator-female.png'
+      }, 
+      {
+        title: 'CrazyMonkey',
+        link: 'https://github.com/irohit427/ecommerce-store',
+        icon: 'https://img.icons8.com/color/48/online-store.png'
+      }
+    ],
+    domain: [
+      {
+        title: 'Admin',
+        link: 'https://ecommerce-admin-sooty-delta.vercel.app/',
+        icon: 'https://img.icons8.com/bubbles/50/system-administrator-female.png'
+      },
+      {
+        title: 'CrazyMonkey',
+        link: 'https://ecommerce-store-nu-lilac.vercel.app/',
+        icon: 'https://img.icons8.com/color/48/online-store.png'
+      },
+    ]
   },
   {
     title: 'Nest Billing Microservices',
