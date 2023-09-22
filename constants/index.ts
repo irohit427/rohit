@@ -290,5 +290,12 @@ export const projects: Project[] = [
       Notably, Stripe serves as the designated payment gateway within this architecture.`,
     imgUrl: 'https://res.cloudinary.com/dutt68gn6/image/upload/v1695282062/1_WAkjm5ZEkRSo96a02PHuyQ_lfmyke.png',
     github: 'https://github.com/irohit427/nest-billing-microservice'
+  },
+  {
+    title: 'Pokedex',
+    description: 'The Pokedex, which has been created with Next.js, incorporates SWR to enhance its performance, ensuring rapid rendering and smoother user experiences. For styling, TailwindCSS and Shadcn have been skillfully employed to give the Pokedex its distinct visual appeal.',
+    imgUrl: 'https://res.cloudinary.com/dutt68gn6/image/upload/v1695404345/Screenshot_2023-09-22_at_11.05.17_PM_jnay3w.png',
+    github: 'https://github.com/irohit427/pokedex',
+    domain: 'https://ipokedex-go.vercel.app/'
   }
 ];
