@@ -16,9 +16,9 @@ const ProjectCard = ({ project}: {
         <Image src={project.imgUrl} 
           fill
           sizes="100vw"
+          objectFit='cover'
           alt='project-cover'
           className='rounded-t-sm'
-          objectFit={'cover'}
         />
       </CardContent>
       <CardHeader>

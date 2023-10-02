@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="relative w-10/12 mx-auto ">
       <div className='md:flex items-center justify-between flex-row-reverse'>
         <div className='flex justify-end items-end relative'>
-          <Image className='w-100% h-auto transform -scale-x-100 grayscale hover:grayscale-0' width={480} height={0} objectFit={'cover'} src="https://res.cloudinary.com/dutt68gn6/image/upload/v1694615986/cds9qcb7zdumhilmnwga.png" alt="" />
+          <Image className='w-100% h-auto transform -scale-x-100 grayscale hover:grayscale-0' width={480} height={0} src="https://res.cloudinary.com/dutt68gn6/image/upload/v1694615986/cds9qcb7zdumhilmnwga.png" alt="" />
         </div>
         <div className='p-4 pl-0 mt-5 sm:mt-20'>
           <p className='text-xl'>Hello</p>
