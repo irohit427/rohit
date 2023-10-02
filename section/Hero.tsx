@@ -17,14 +17,14 @@ const Hero = () => {
             <p className='text-xl sm:text-2xl md:text-xl lg:text-2xl xl:text-3xl py-4'>A Full Stack Developer </p>
           </h1>
           <p className='text-base sm:text-xl md:text-base lg:text-xl xl:text-2xl lg:pt-6'>
-            Bringing imagination to live website
+            Crafting Digital Experiences, One Line of Code at a Time
           </p>
           <div className='flex items-center mt-6 md:mt-14'>
             <ul className='flex items-center space-x-2 sm:space-x-5 mr-6 my-4'>
               {
                 profileLinks.map((profileLink: ProfileLink, index: number) => (
                   <li key={index}>
-                    <Link href={profileLink.link}>
+                    <Link href={profileLink.link} target='_blank'>
                       <profileLink.icon size={36} key={index} className='hover:opacity-100 opacity-75 transition ease-in duration-200 hover:text-coral-red hover:scale-125' />
                     </Link>    
                   </li>

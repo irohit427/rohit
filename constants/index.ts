@@ -31,20 +31,13 @@ export const navLinks: NavLink[] = [
 ];
 
 export const profileLinks: ProfileLink[] = [
+
   {
-    link: '',
-    icon: AiOutlineTwitter
-  },
-  {
-    link: '',
-    icon: GrInstagram
-  },
-  {
-    link: '',
+    link: 'https://github.com/irohit427',
     icon: AiOutlineGithub
   },
   {
-    link: '',
+    link: 'https://www.linkedin.com/in/rohit-raj-862054b5/',
     icon: AiOutlineLinkedin
   },
 ];
@@ -283,6 +276,13 @@ export const projects: Project[] = [
         icon: 'https://img.icons8.com/color/48/online-store.png'
       },
     ]
+  },
+  {
+    title: 'MasteryMe',
+    description: 'MasteryMe is an LMS platform developed with Next.js and designed using Tailwind. It employs Postgres to store information related to courses, chapters, and users. Within this platform, instructors can craft courses and offer them to their intended audience, with Stripe handling the payment processing.',
+    imgUrl: 'https://res.cloudinary.com/dutt68gn6/image/upload/v1696279057/Screenshot_2023-10-03_at_2.00.37_AM_ibfy4i.png',
+    github: 'https://github.com/irohit427/masteryme',
+    domain: 'https://masteryme.vercel.app'
   },
   {
     title: 'Nest Billing Microservices',
