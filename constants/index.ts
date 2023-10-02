@@ -1,5 +1,5 @@
 import { Experience, NavLink, ProfileLink, Project, Skill } from "@/types";
-import { AiOutlineTwitter, AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai"
+import { AiOutlineWhatsApp, AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai"
 import { GrInstagram } from "react-icons/gr";
 
 export const navLinks: NavLink[] = [
@@ -40,6 +40,10 @@ export const profileLinks: ProfileLink[] = [
     link: 'https://www.linkedin.com/in/rohit-raj-862054b5/',
     icon: AiOutlineLinkedin
   },
+  {
+    link: 'https://api.whatsapp.com/send?phone=9793212508',
+    icon: AiOutlineWhatsApp
+  }
 ];
 
 export const aboutText: string = `Hi there! I am Rohit Raj, a dynamic and creative Full Stack Developer
