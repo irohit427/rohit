@@ -4,7 +4,6 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import {RxHamburgerMenu} from "react-icons/rx"
 import { ThemeToggler } from './ThemeToggler'
-import { MobileSidebar } from './MobileSidebar'
 
 
 
@@ -17,6 +16,9 @@ const Navbar = ({ name, links}: {
     <div className='w-10/12 mx-auto py-4 flex items-center justify-between border-b-[2px] border-neutral-200'>
       <div className='sm:text-3xl text-xl font-bold inline-block hover:cursor-pointer hover:scale-[120%] duration-300'>
         <a href="/" className='inline-block'>{name}</a>
+      </div>
+      <div className='md:hidden hover:cursor-pointer' onClick={() => setShowNav(!showNav)}>
+        <RxHamburgerMenu size={36}/>
       </div>
       <nav className={`flex items-center justify-center max-md:absolute max-md:w-full left-0 transition ease-in duration-300 ${showNav ? "top-[70px] visible": "max-md:invisible top-0"}`}>
           <ThemeToggler />
@@ -32,8 +34,6 @@ const Navbar = ({ name, links}: {
             ))}
           </ul>
       </nav>
-      <MobileSidebar />
-      
     </div>
   )
 }

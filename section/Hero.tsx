@@ -17,7 +17,7 @@ const Hero = () => {
             <p className='text-xl sm:text-2xl md:text-xl lg:text-2xl xl:text-3xl py-4'>A Full Stack Developer </p>
           </h1>
           <p className='text-base sm:text-xl md:text-base lg:text-xl xl:text-2xl lg:pt-6'>
-            Crafting Digital Dreams, One Line of Code at a Time - From Frontend Elegance to Backend Brilliance
+            Bringing imagination to live website
           </p>
           <div className='flex items-center mt-6 md:mt-14'>
             <ul className='flex items-center space-x-2 sm:space-x-5 mr-6 my-4'>
