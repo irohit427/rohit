@@ -11,15 +11,15 @@ const Experience = () => {
         <div className='pb-12'>
           <h1 className='heading'>Experience</h1>
         </div>
-        <div className='flex sm:flex-col md:flex-row gap-14 items-start'>
+        <div className='flex flex-col md:flex-row gap-14 items-start'>
           {/* Left */}
-          <div className='flex sm:flex-row lg:flex-col sm:w-[100%] lg:w-[30%] relative'>
-            <ul className='sm:flex-row sm:flex sm:flex-wrap'>
-              <div className='border-l-2 border-gray-600 py-4'>
+          <div className='sm:w-full md:w-[30%]'>
+            <ul>
+              <div className='border-b-2 md:border-b-0 md:border-l-2 border-gray-600 py-0 flex flex-row md:flex-col'>
                 {
                   experiences.map((experience: Experience, index) => (
-                    <div key={index} onClick={() => setSelected(index)} className={`${index === selected ? 'bg-coral-red dark:bg-zinc-700 border-l-4 border-coral-red' : ''}`}>
-                      <li className='py-4 px-4 hover:cursor-pointer hover:bg-coral-red'>
+                    <div key={index} onClick={() => setSelected(index)} className={`${index === selected ? 'bg-coral-red dark:bg-zinc-700 rounded-t-md md:rounded-none border-b-4 md:border-b-0 md:border-l-4 border-coral-red' : ''}`}>
+                      <li className='py-4 hover:rounded-t-md md:hover:rounded-none px-4 hover:cursor-pointer hover:bg-coral-red h-24 w-[150px] md:w-full flex justify-center items-center text-center'>
                         <span>{experience.company}</span>
                       </li>
                     </div>
