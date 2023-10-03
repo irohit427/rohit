@@ -3,6 +3,7 @@ import Contact from '@/section/Contact'
 import Experience from '@/section/Experience'
 import Hero from '@/section/Hero'
 import Projects from '@/section/Projects'
+import Publications from '@/section/Publications'
 import Skills from '@/section/Skills'
 
 export default function Home() {
@@ -22,6 +23,9 @@ export default function Home() {
       </section>
       <section id='projects'>
         <Projects />
+      </section>
+      <section id='publication'>
+        <Publications />
       </section>
       <section id='contact'>
         <Contact />

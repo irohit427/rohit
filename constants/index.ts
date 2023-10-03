@@ -1,4 +1,4 @@
-import { Experience, NavLink, ProfileLink, Project, Skill } from "@/types";
+import { Experience, NavLink, ProfileLink, Project, Publication, Skill } from "@/types";
 import { AiOutlineWhatsApp, AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai"
 import { GrInstagram } from "react-icons/gr";
 
@@ -303,3 +303,69 @@ export const projects: Project[] = [
     domain: 'https://ipokedex-go.vercel.app/'
   }
 ];
+
+export const publications: Publication[] = [
+  {
+    title: 'Anticounterfeiting in Pharmaceutical Supply Chain by establishing Proof of Ownership',
+    abstract: `Drug counterfeiting is a serious and increasing critical issue worldwide, which puts the health of consumers and the general population at risk. WHO estimates that the world’s
+    counterfeit drug market make billions of dollars annually. It is due to the inadequate supply chain in the developing countries
+    that one in the drug is counterfeit. People buying such medicines not only waste their money but also put their life and health
+    in danger. A drug’s ownership changes from manufacturer to distributor and then to the pharmacist before reaching the
+    customer. The manufacturers don’t know how their drug is being used. At the same time, consumers don’t know whether
+    the drug has come from the rightful source. It is due to the counterfeit drug in the supply chain manufacturing companies
+    and countries face huge economic loss. The RFID technology has been effective for over a decade providing anti-counterfeit
+    measures to the supply chain. However, the RFID tags cannot be guaranteed genuineness, since the tags can be cloned easily.
+    In this paper, we propose how blockchain can be utilized to not only prevent drug counterfeiting but also add traceability,
+    security, and visibility to the pharmaceutical supply chain. For this purpose, a permissioned blockchain is designed to which
+    only trusted parties can join the network and push transactions to the blockchain.`,
+    imgUrl: 'https://res.cloudinary.com/dutt68gn6/image/upload/v1696283722/Screenshot_2023-10-03_at_3.24.34_AM_bp8bdo.png',
+    link: 'https://drive.google.com/file/d/19QvZwVDhjCiIAAjbG-Wtt5BjJd2M1ntL/view?usp=drive_link'
+  },
+  {
+    title: 'Real Time Complex Event Processing and Analytics for Smart Building',
+    abstract: `Smart buildings equipped with sensors and electronic devices as a Cyber Physical Systems (CPS) offer
+    great research perspective to explore communication, computation and controlling of physical devices by using
+    real time Complex Event Processing (CEP) and analytics. Since, CPS like Smart- Building involves the integration of
+    several types of equipment interoperability, maintainability, signaling, bandwidth, reliability, security,
+    privacy, authentications, data storage, heterogeneity and cost effectiveness are the critical issues to be addressed. In
+    addition, interactivity and dynamic feedback, context correlation with respect to streaming events and
+    uncertainties in event composition are also identified as major challenging issues. To handle all these challenges
+    integration of smart buildings with CEP and real-time data analytics are emerging as a new area of research. In the
+    present research, a model for real time CEP and analytics have been proposed for Smart-Building at IIIT Allahabad,
+    India. The research work includes background study, data collection, recognizing simple and complex events, stream
+    processing, and automated construction of event definitions using machine learning, event-based real time decision-
+    making and performance tests. The study includes deployment of various sensors and actuators for gathering
+    smart building data. Raspberry Pi board is used to collect data from sensors and communicate the collected data to
+    cloud for analytics. The research will also highlight the strength, weakness, and challenges addressed in the
+    proposed system.`,
+    imgUrl: 'https://res.cloudinary.com/dutt68gn6/image/upload/v1696285264/Screenshot_2023-10-03_at_3.50.22_AM_noihe1.png',
+    link: 'https://drive.google.com/file/d/1NfasU5VPEje9jY7PnLpuV6LD9w7rV7tD/view?usp=drive_link'
+
+  },
+  {
+    title: 'Voice Controlled Cyber-Physical System for Smart Homes',
+    abstract: `Smart home equipped with sensors and electronic devices as a
+    Cyber-Physical Systems (CPS) offers great research perspective to
+    explore communication, computation and controlling of physical
+    devices by using real-time processing and analytics. Since CPS like
+    smart home involves the integration of several types of sensors
+    and equipment, therefore reliability, maintainability, security, data
+    storage and cost-effectiveness are some of the critical issues to be
+    addressed. In addition, interactivity and dynamic feedback, con-
+    text correlation with respect to streaming events and uncertainties
+    in event composition are also identified as major challenging is-
+    sues. In the present research, a model for CPS is proposed which is
+    a voice-controlled smart home. Spoken Language Understanding
+    (SLU) plays an important role in dialog system for identifying se-
+    mantic components in user utterance. The research work includes
+    stream processing, data collection, identification of actions from
+    voice utterance and event-based real-time decision making. The
+    study includes deployment of various sensors and actuators for
+    performing various actions based on voice commands. Raspberry
+    Pi is used as a central node to which various sensors and equip-
+    ment are connected. It receives voice command from android device
+    and identifies the various intents and slots from the input utterance.`,
+    imgUrl: 'https://res.cloudinary.com/dutt68gn6/image/upload/v1696316776/Screenshot_2023-10-03_at_3.50.38_AM_uuszib.png',
+    link: 'https://drive.google.com/file/d/1S3bQl1DLPSnve3x0cX6AusQRT8Ma1Mmr/view?usp=drive_link'
+  }
+]

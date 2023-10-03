@@ -1,3 +1,5 @@
+import { type } from "os"
+
 export type NavLink = {
   title: string,
   url: string,
@@ -42,3 +44,9 @@ export type Project = {
   imgUrl: string,
 }
 
+export type Publication = {
+  title: string,
+  abstract: string,
+  imgUrl: string,
+  link: string
+}
