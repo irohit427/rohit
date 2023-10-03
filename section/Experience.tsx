@@ -1,5 +1,6 @@
 'use client'
 import { experiences } from '@/constants'
+import { cn } from '@/lib/utils'
 import { Experience } from '@/types'
 import React, { useState } from 'react'
 
@@ -18,9 +19,9 @@ const Experience = () => {
               <div className='border-b-2 md:border-b-0 md:border-l-2 border-gray-600 py-0 flex flex-row md:flex-col'>
                 {
                   experiences.map((experience: Experience, index) => (
-                    <div key={index} onClick={() => setSelected(index)} className={`${index === selected ? 'bg-coral-red dark:bg-zinc-700 rounded-t-md md:rounded-none border-b-4 md:border-b-0 md:border-l-4 border-coral-red' : ''}`}>
-                      <li className='py-4 hover:rounded-t-md md:hover:rounded-none px-4 hover:cursor-pointer hover:bg-coral-red h-24 w-[150px] md:w-full flex justify-center items-center text-center'>
-                        <span>{experience.company}</span>
+                    <div key={index} onClick={() => setSelected(index)} className={cn(`${index === selected ? 'bg-coral-red dark:bg-zinc-700 rounded-t-md md:rounded-none border-b-4 md:border-b-0 md:border-l-4 border-coral-red' : ''}`, '')}>
+                      <li className='hover:rounded-t-md md:hover:rounded-none hover:cursor-pointer hover:bg-coral-red h-24 w-[110px] md:w-full flex justify-center items-center text-center'>
+                        <span className='line-clamp-1 md:line-clamp-none'>{experience.company}</span>
                       </li>
                     </div>
                   ))
@@ -30,7 +31,7 @@ const Experience = () => {
           </div>
           {/* Right */}
           <div className='relative sm:w-full lg:w-[70%]'>
-            <div className='pt-6'>
+            <div className='pt-0 md:pt-6'>
               <h1 className='text-xl pb-5 font-bold'>
                 {experiences[selected].role} @ <span className='text-coral-red'>{experiences[selected].company}</span>
               </h1>
@@ -39,7 +40,7 @@ const Experience = () => {
                 {
                   experiences[selected].shortDesc.map((desc: string, index) => (
                     <li key={index} className='pb-4'>
-                      <p className='text-lg text-justify'><span className='pr-4 text-coral-red leading-6'>▹</span>{desc}</p>
+                      <p className='text-md md:text-lg text-justify'><span className='pr-4 text-coral-red leading-6'>▹</span>{desc}</p>
                     </li>
                   ))
                 }
