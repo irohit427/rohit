@@ -8,7 +8,7 @@ const PublicationCard = ({ publication }: {
 }) => {
   return (
     <Link href={publication.link} target='_blank'>
-      <div className='border p-4 rounded-xl flex flex-col md:flex-row'>
+      <div className='border p-4 rounded-xl flex flex-col md:flex-row hover:border-zinc-600 hover:scale-[101%] hover:shadow-zinc-700 shadow-lg transition-all ease-in-out duration-500'>
         <div className='pr-4 mx-auto'>
           <Image src={publication.imgUrl}
             objectFit='contain'

@@ -11,7 +11,7 @@ const ProjectCard = ({ project}: {
   project: any
 }) => {
   return (
-    <Card className="lg:max-w-md w-full relative hover:border-white transition-all ease-in-out duration-500">
+    <Card className="lg:max-w-md w-full relative hover:border-zinc-600 hover:scale-[101%] hover:shadow-zinc-700 shadow-xl transition-all ease-in-out duration-500">
       <CardContent className='min-h-[340px] relative'>
         <Image src={project.imgUrl} 
           fill
