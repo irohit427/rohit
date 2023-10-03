@@ -41,7 +41,7 @@ export const profileLinks: ProfileLink[] = [
     icon: AiOutlineLinkedin
   },
   {
-    link: 'https://api.whatsapp.com/send?phone=9793212508',
+    link: 'https://api.whatsapp.com/send?phone=+919711796252',
     icon: AiOutlineWhatsApp
   }
 ];
