@@ -31,11 +31,9 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
         >
-          
           <Navbar name='Rohit' links={navLinks} />
           <main className='relative mx-auto'>{children}</main>
           <Footer/>
-          
         </ThemeProvider>
       </body>
     </html>

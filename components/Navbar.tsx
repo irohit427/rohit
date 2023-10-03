@@ -2,7 +2,6 @@
 import { NavLink } from '@/types'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import {RxHamburgerMenu} from "react-icons/rx"
 import { ThemeToggler } from './ThemeToggler'
 
 const Navbar = ({ name, links}: {
@@ -13,7 +12,7 @@ const Navbar = ({ name, links}: {
   return (
     <div className='w-10/12 mx-auto py-4 flex items-center justify-between border-b-[2px] border-neutral-200'>
       <div className='sm:text-3xl text-xl font-bold inline-block hover:cursor-pointer hover:scale-[120%] duration-300'>
-        <a href="/" className='inline-block'>{name}</a>
+        <a href="/" className='inline-block'>&lt;<span className='text-coral-red'>{name}</span>&#8725;&gt;</a>
       </div>
       <nav className={`flex items-center justify-center max-md:absolute max-md:w-full left-0 transition ease-in duration-300 ${showNav ? "top-[70px] visible": "max-md:invisible top-0"}`}>
           <ThemeToggler />
