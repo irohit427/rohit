@@ -14,7 +14,7 @@ const Hero = () => {
           <p className='text-xl'>Hello</p>
           <h1 className='text-4xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl pt-2 lg:pt-6'>
             I&apos;m <span className='text-coral-red'>Rohit</span>
-            <p className='text-xl sm:text-2xl md:text-xl lg:text-2xl xl:text-3xl py-4'>A Full Stack Developer </p>
+            {/* <p className='text-xl sm:text-2xl md:text-xl lg:text-2xl xl:text-3xl py-4'>A Full Stack Developer </p> */}
           </h1>
           <p className='text-base sm:text-xl md:text-base lg:text-xl xl:text-2xl lg:pt-6'>
             Crafting Digital Experiences, One Line of Code at a Time
