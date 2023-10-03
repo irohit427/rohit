@@ -20,7 +20,7 @@ const Experience = () => {
                 {
                   experiences.map((experience: Experience, index) => (
                     <div key={index} onClick={() => setSelected(index)} className={cn(`${index === selected ? 'bg-coral-red dark:bg-zinc-700 rounded-t-md md:rounded-none border-b-4 md:border-b-0 md:border-l-4 border-coral-red' : ''}`, '')}>
-                      <li className='hover:rounded-t-md md:hover:rounded-none hover:cursor-pointer hover:bg-coral-red h-24 w-[110px] md:w-full flex justify-center items-center text-center'>
+                      <li className='hover:rounded-t-md md:hover:rounded-none hover:cursor-pointer hover:bg-coral-red h-16 w-[110px] md:w-full flex justify-center items-center text-center'>
                         <span className='line-clamp-1 md:line-clamp-none'>{experience.company}</span>
                       </li>
                     </div>
