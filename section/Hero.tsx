@@ -31,7 +31,7 @@ const Hero = () => {
                 ))
               }
             </ul>
-            <Link href="https://drive.google.com/file/d/1AFNYdQO93thiCJy_-Zk5NkHDgQ80BNIp/view?usp=sharing"
+            <Link href="https://drive.google.com/file/d/1NVP-Kmo74F8jJWDhZ6Fs_WXK7A1VuncL/view?usp=sharing"
               target='_blank' 
               className='px-6 py-[7px] whitespace-nowrap 
                 transition ease-in duration-200 dark:bg-neutral-700 dark:hover:bg-coral-red
